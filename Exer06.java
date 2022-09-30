@@ -6,6 +6,7 @@ public class Exer06 {
         var totalAprovados = 0;
         var totalExame = 0;
         var totalReprovados = 0;
+        float mediaTotal = 0;
 
         Scanner leitor = new Scanner(System.in);
 
@@ -16,7 +17,7 @@ public class Exer06 {
             float nota2 = Float.parseFloat(leitor.nextLine());
             float media = (nota1 + nota2)/2;
             System.out.println("Sua média é: " + media);
-            float mediaTotal = media/6;
+            mediaTotal = media/6;
 
             if (media < 3){
                 System.out.println("Você foi REPROVADO!");
@@ -32,5 +33,7 @@ public class Exer06 {
         System.out.println("O total de alunos aprovados foi de: " + totalAprovados);
         System.out.println("O total de alunos em exame foi de: " + totalExame);
         System.out.println("O total de alunos reprovados foi de: " + totalReprovados);
+        System.out.println("A média total da turma foi de: " + mediaTotal);
     }
+
 }
